@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Newsletter</title>
+    <style>
+        body {
+            background-color: #212129; /* Cor de fundo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white; /* Cor do texto */
+        }
+        .submission-box {
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: #282a36; /* Cor de fundo da caixa */
+            border-radius: 5px;
+            width: 350px; /* Largura da caixa */
+        }
+        img {
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="email"] {
+            align-items: center;
+            display: flex;
+            margin: 0 auto;
+            border: none;
+            border-radius: 5px;
+            width: 80%; /* Largura do campo de e-mail */
+            color: #000;
+            height: 30px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: red; /* Cor de fundo do botão */
+            color: white; /* Cor do texto do botão */
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgba(255, 0, 0, 0.626);
+        }
+        .newsletter-text {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="submission-box">
+        <img src="https://drive.google.com/uc?export=view&id=1ofGluY6Bt_CC9yKtp6sYfYpDHCtdtUKp" alt="Logo Log Z">
+        <div class="newsletter-text">Coloque seu e-mail para assinar a newsletter!</div>
+        <form action="https://formspree.io/f/xleykgeb" method="POST">
+                <input type="email" name="email" placeholder="Escreva seu e-mail">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
